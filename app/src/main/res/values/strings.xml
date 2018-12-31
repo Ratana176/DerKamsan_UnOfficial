@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Der Kamsan</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="subtitle1">\t\tSihanoukville is not a small place, and the best way to get around is to hire a motorbike.  Sihanoukville itself is east of the main backpackers\' beach and close to the more mid-range Ochatial Beach. Due south of town is tiny Ko Pos Beach, which ha a solitary mid-range hotel, and the larger Independence Beach, which has the crumbling Independence Hotel - slated for redevelopment.</string>
+    <string name="home_short_des">\t\tSiem Reap province is located in northwest Cambodia. It is the major tourist hub in Cambodia, as it is the closest city to the world famous...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dont_have_an_account">Do not have an account?</string>
+    <string name="register"><u> Register here!</u></string>
+    <string name="facebook_app_id">461786374344751</string>
+    <string name="hok_link_fb">Fb:fb.me/de.hong.5</string>
+    <string name="hok_link_email">Mail: hokhacker@gmail.com</string>
+    <string name="moka_link_fb">Fb:fb.me/molyka.19.07</string>
+    <string name="moka_link_email">Mail: sovannmolyka79@gmail.com</string>
+    <string name="ratana_link_fb">Fb:fb.me/ratana.chhorm</string>
+    <string name="ratana_link_email">Mail:chhormratana@gmail.com</string>
+    <string name="kheang_link_fb">Fb:fb.me/chhoem.sokheang.3</string>
+    <string name="kheang_link_email">Mail:sokheangchhoem0408@gmail.com</string>
+</resources>

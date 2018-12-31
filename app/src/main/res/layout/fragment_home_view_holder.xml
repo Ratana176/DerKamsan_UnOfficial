@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/corner_background_x10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_home_title_view_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="here is the title" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_home_view_holder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:actualImageScaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        app:placeholderImage="@drawable/ic_derkamsan" />
+
+    <TextView
+        android:id="@+id/txt_home_desc_view_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:maxLines="3"
+        android:text="@string/subtitle1" />
+
+</LinearLayout>

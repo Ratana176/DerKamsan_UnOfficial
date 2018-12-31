@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="200dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:contentPadding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/offline_image_place"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/img_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:id="@+id/offline_text_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Koh Rong"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/offline_text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23.3 MB"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center">
+
+                    <ImageView
+                        android:id="@+id/offline_button_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_more_green"
+                        android:paddingRight="4dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

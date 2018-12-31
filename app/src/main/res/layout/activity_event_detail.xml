@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/event_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:id="@+id/SliderDots"
+                    android:layout_below="@+id/viewPager"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <!--calendar -->
+                <RelativeLayout
+                    android:id="@+id/bottom_event_details_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:id="@+id/icon_calendar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:paddingTop="8dp"
+                        android:src="@drawable/ic_calendar" />
+
+                    <TextView
+                        android:id="@+id/txt_event_title_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/icon_calendar"
+                        android:text="Happy water fastival day" />
+
+                    <TextView
+                        android:id="@+id/txt_event_date_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_event_title_details"
+                        android:layout_toRightOf="@id/icon_calendar"
+                        android:text="01 jan 2018" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <!--top bar-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/lightGrey" />
+                    <!--download and like button-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <!--download button-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:id="@+id/btn_event_details_download"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/pressed_color"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_download" />
+
+                            <TextView
+                                android:id="@+id/txt_download"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:text="Download"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <!--Like Button-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/btn_event_details_like"
+                            android:background="@drawable/pressed_color"
+                            android:clickable="true"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_share" />
+
+                            <TextView
+                                android:id="@+id/txt_Share"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:text="Like"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/lightGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txt_event_details_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ORIENTATION"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_event_details_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_event_details_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="INFORMATION"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_event_details_desc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle1"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

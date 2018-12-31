@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:background="#179ba9">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_green_user"
+            android:hint="    UserName" />
+
+        <EditText
+            android:id="@+id/et_email_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_green_mail"
+            android:hint="     Email or Phone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/tilPass"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_green_password"
+                android:hint="    Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/etConfirm_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_green_password"
+            android:hint="    Confirm Password"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/ibSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:src="@drawable/btn_sing_up" />
+
+
+        <ImageButton
+            android:id="@+id/ibCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:src="@drawable/btn_cancel" />
+
+    </LinearLayout>
+</LinearLayout>

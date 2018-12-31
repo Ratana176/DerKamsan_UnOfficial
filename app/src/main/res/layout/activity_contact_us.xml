@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ContactUsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Contact Us" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+
+            android:text="How can we help you ?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape"
+            android:hint="Your Email or Phone"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/txtSubject"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:hint="Your Subject"
+            android:textColor="@color/white"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/shape"
+            android:hint="Your Message..."
+            android:textColor="@color/white"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape"
+            android:layout_marginTop="16dp"
+            android:text="Submit"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+</LinearLayout>

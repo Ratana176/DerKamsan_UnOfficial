@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#179ba9"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tvAbout_us"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AlertDialog.AppCompat.Light">
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icn_white_close"
+            android:layout_margin="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivClose"
+                android:layout_marginLeft="70dp"
+                android:text="About Us"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+        </android.support.v7.widget.Toolbar>
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_below="@id/tvAbout_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_full_logo"/>
+
+  </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Developer"
+                android:textColor="#179ba9"
+                android:textSize="24dp"
+            />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/Hok_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_hok" />
+
+            <TextView
+                android:id="@+id/tvHok"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Hok_profile"
+                android:text="@string/hok_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
+                 />
+            <TextView
+                android:id="@+id/mail_hok"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHok"
+                android:layout_toRightOf="@id/Hok_profile"
+                android:text="@string/hok_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/Moka_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_moka" />
+            <TextView
+                android:id="@+id/tvMoka_fb"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Moka_profile"
+                android:text="@string/moka_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
+                />
+            <TextView
+                android:id="@+id/Moka_mail"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMoka_fb"
+                android:layout_toRightOf="@id/Moka_profile"
+                android:text="@string/moka_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/Kheang_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_kheang" />
+            <TextView
+                android:id="@+id/tvKheang_fb"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/Kheang_pro"
+                android:text="@string/kheang_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
+                />
+            <TextView
+                android:id="@+id/Kheang_mail"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvKheang_fb"
+                android:layout_toRightOf="@id/Kheang_pro"
+                android:text="@string/kheang_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/Ratana_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_ratana" />
+            <TextView
+                android:id="@+id/tvRatana_fb"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Ratana_profile"
+                android:text="@string/ratana_link_fb"
+                android:autoLink="web"
+                android:clickable="true"
+                />
+            <TextView
+                android:id="@+id/Ratana_mail"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvRatana_fb"
+                android:layout_toRightOf="@id/Ratana_profile"
+                android:text="@string/ratana_link_email"
+                android:autoLink="email"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

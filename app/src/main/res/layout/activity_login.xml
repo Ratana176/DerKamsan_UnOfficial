@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#179ba9">
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/etxt_email_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="     Email or Phone"
+            android:drawableLeft="@drawable/ic_green_mail"
+           />
+
+        <EditText
+            android:id="@+id/etxtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="    Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_green_password"
+            />
+        <TextView
+            android:id="@+id/tvForgot_passw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot_password"
+            android:textColor="#179ba9"
+            android:onClick="clicked"
+
+            />
+        <ImageButton
+            android:id="@+id/ibSignIn"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_signin"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFacebookLogin"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_margin="10dp"
+            android:onClick="Clicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register here!"
+            android:textColor="#179ba9"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
